@@ -1,4 +1,4 @@
-import {Component, computed, inject, signal, WritableSignal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, inject, signal, WritableSignal} from '@angular/core';
 import {ActivatedRoute, RouterModule} from '@angular/router';
 import { BookService} from '@app/services/BookService';
 import { CommonModule } from '@angular/common';
@@ -13,7 +13,8 @@ import {MatButtonModule} from '@angular/material/button';
     standalone: true,
     imports: [CommonModule, MatCardModule, MatIconModule, MatButtonModule, RouterModule],
     templateUrl: './book-details-page.html',
-    styleUrl: './book-details-page.scss'
+    styleUrl: './book-details-page.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BookDetailsPageComponent {
     private readonly route: ActivatedRoute = inject(ActivatedRoute);

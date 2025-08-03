@@ -1,23 +1,18 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { BookCardComponent } from './book-card';
+import { provideRouter } from '@angular/router';
 
-import { BookCard } from './book-card';
+describe('BookCardComponent', () => {
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            imports: [BookCardComponent],
+            providers: [provideRouter([])], // 👈 сюда
+        }).compileComponents();
+    });
 
-describe('BookCard', () => {
-  let component: BookCard;
-  let fixture: ComponentFixture<BookCard>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [BookCard]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(BookCard);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        const fixture = TestBed.createComponent(BookCardComponent);
+        const component = fixture.componentInstance;
+        expect(component).toBeTruthy();
+    });
 });

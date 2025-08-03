@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import {Component, signal, WritableSignal} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {AppHeader} from '@app/core/components/app-header/app-header';
 
@@ -9,5 +9,5 @@ import {AppHeader} from '@app/core/components/app-header/app-header';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('book-catalog');
+  readonly $title: WritableSignal<string> = signal('book-catalog');
 }

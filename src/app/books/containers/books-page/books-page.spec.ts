@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { BooksPageComponent } from './books-page';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
 
-import { BooksPage } from './books-page';
+describe('BooksPageComponent', () => {
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            imports: [BooksPageComponent],
+            providers: [
+                provideHttpClient(),
+                provideRouter([]),
+            ],
+        }).compileComponents();
+    });
 
-describe('BooksPage', () => {
-  let component: BooksPage;
-  let fixture: ComponentFixture<BooksPage>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [BooksPage]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(BooksPage);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        const fixture = TestBed.createComponent(BooksPageComponent);
+        const component = fixture.componentInstance;
+        expect(component).toBeTruthy();
+    });
 });

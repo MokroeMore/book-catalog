@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BooksSearchBarComponent } from './books-search-bar';
 
-import { BookSearchBar } from './book-search-bar';
-
-describe('BookSearchBar', () => {
-  let component: BookSearchBar;
-  let fixture: ComponentFixture<BookSearchBar>;
+describe('BooksSearchBarComponent', () => {
+  let component: BooksSearchBarComponent;
+  let fixture: ComponentFixture<BooksSearchBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BookSearchBar]
+      imports: [BooksSearchBarComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BookSearchBar);
+    fixture = TestBed.createComponent(BooksSearchBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

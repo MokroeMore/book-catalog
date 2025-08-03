@@ -12,6 +12,12 @@
     </mat-card-content>
 
     <mat-card-actions class="book-card__actions">
-        <button mat-button color="primary" [routerLink]="['/book', book?.id]">More</button>
+        <button mat-button
+                type="button"
+                color="primary"
+                [routerLink]="['/book', book?.id]"
+        >
+            More
+        </button>
     </mat-card-actions>
 </mat-card>

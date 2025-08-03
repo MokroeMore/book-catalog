@@ -1,14 +1,14 @@
-import { inject, Injectable, signal } from '@angular/core';
+import {inject, Injectable, Signal, signal, WritableSignal} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { computed } from '@angular/core';
 import {BookType} from '@app/books/models/book-type.model';
 
 @Injectable({ providedIn: 'root' })
 export class BookService {
-    private readonly http = inject(HttpClient);
-    private readonly $books = signal<BookType[]>([]);
+    private readonly http: HttpClient = inject(HttpClient);
+    private readonly $books: WritableSignal<BookType[]> = signal<BookType[]>([]);
 
-    readonly $allBooks = computed(() => this.$books());
+    readonly $allBooks: Signal<BookType[]> = computed(() => this.$books());
 
     loadBooks(): void {
         this.http.get<BookType[]>('/assets/books-data/books.json')

@@ -5,10 +5,10 @@ import {RouterLink} from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
-  selector: 'app-header',
-  imports: [MatToolbarModule, MatIconModule, RouterLink, MatButtonModule],
-  templateUrl: './app-header.html',
-  styleUrl: './app-header.scss'
+    selector: 'app-header',
+    imports: [MatToolbarModule, MatIconModule, RouterLink, MatButtonModule],
+    templateUrl: './app-header.html',
+    styleUrl: './app-header.scss'
 })
 export class AppHeader {
 

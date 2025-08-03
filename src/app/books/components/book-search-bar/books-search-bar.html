@@ -9,7 +9,12 @@
             (input)="$onSearch()?.(searchControl.value ?? '')"
         />
     </mat-form-field>
-    <button matButton="elevated" color="accent" class="books-search-bar__btn-add">
+    <button matButton="elevated"
+            type="button"
+            color="accent"
+            class="books-search-bar__btn-add"
+            (click)="openDialog()"
+    >
         Add Book
     </button>
 </div>
