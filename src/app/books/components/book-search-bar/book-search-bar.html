@@ -1,0 +1,15 @@
+<div class="books-search-bar">
+    <mat-form-field appearance="outline" class="books-search-bar__input">
+        <mat-icon matPrefix>search</mat-icon>
+        <input
+            matInput
+            [formControl]="searchControl"
+            placeholder="Search by title or author"
+            type="text"
+            (input)="$onSearch()?.(searchControl.value ?? '')"
+        />
+    </mat-form-field>
+    <button matButton="elevated" color="accent" class="books-search-bar__btn-add">
+        Add Book
+    </button>
+</div>

@@ -1,1 +1,9 @@
-<p>books-list works!</p>
+@let books = $booksList();
+
+<div class="books-list__container">
+    @for (book of books; track book.id) {
+        <app-book-card [$book]="book" />
+    } @empty {
+        <p>No data</p>
+    }
+</div>
