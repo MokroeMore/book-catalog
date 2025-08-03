@@ -4,5 +4,4 @@ export interface BookType {
     author: string;
     description: string;
     rating: number;
-    year: number;
 }

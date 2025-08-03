@@ -1,3 +1,3 @@
-export function createId(): string {
-    return new Date().getTime().toString();
+export function createId(): number {
+    return new Date().getTime();
 }

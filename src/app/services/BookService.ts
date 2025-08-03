@@ -1,7 +1,9 @@
-import {inject, Injectable, Signal, signal, WritableSignal} from '@angular/core';
+import { inject, Injectable, Signal, signal, WritableSignal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { computed } from '@angular/core';
-import {BookType} from '@app/books/models/book-type.model';
+import { BookType } from '@app/books/models/book-type.model';
+import { AddBookType } from '@app/books/models/add-book-form-type.model';
+import { createId } from '@app/shared/utils/create-id.util';
 
 @Injectable({ providedIn: 'root' })
 export class BookService {
@@ -20,8 +22,9 @@ export class BookService {
         return this.$books().find((book) => book.id === +id);
     }
 
-    addBook(book: BookType): void {
-        this.$books.update((prev) => [...prev, book]);
+    addBook(book: AddBookType): void {
+        const bookRes = { ...book, id: createId()};
+        this.$books.update((prev) => [...prev, bookRes]);
     }
 
     searchBook(term: string): BookType[] {

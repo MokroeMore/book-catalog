@@ -38,6 +38,7 @@ export class BooksSearchBarComponent {
 
     openDialog(): void {
         this.dialog.open(AddBookDialogComponent, {
+            width: '600px',
             autoFocus: false,
             disableClose: false,
         });

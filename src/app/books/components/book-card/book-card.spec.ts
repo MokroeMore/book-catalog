@@ -6,7 +6,7 @@ describe('BookCardComponent', () => {
     beforeEach(async () => {
         await TestBed.configureTestingModule({
             imports: [BookCardComponent],
-            providers: [provideRouter([])], // 👈 сюда
+            providers: [provideRouter([])],
         }).compileComponents();
     });
 

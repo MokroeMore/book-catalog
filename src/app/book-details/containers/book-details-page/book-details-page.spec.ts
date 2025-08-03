@@ -14,8 +14,7 @@ describe('BookDetailsPageComponent', () => {
         name: 'Test Book',
         author: 'Author',
         description: 'Description',
-        rating: 4.5,
-        year: 2020
+        rating: 4.5
     };
 
     const bookServiceMock = {

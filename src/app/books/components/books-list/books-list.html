@@ -4,6 +4,14 @@
     @for (book of books; track book.id) {
         <app-book-card [$book]="book" />
     } @empty {
-        <p>No data</p>
+        <div></div>
+        <div class="books-list__not-found">
+            <img
+                class="books-list__not-found-img"
+                src="/assets/images/pngs/sad-cat.png"
+                alt="sad kitty"
+
+            >
+        </div>
     }
 </div>

@@ -26,7 +26,6 @@ export class BookDetailsPageComponent {
     );
 
     constructor() {
-        this.booksService.loadBooks();
         this.route.paramMap.subscribe(params => {
             const id = params.get('id');
             this.$bookId.set(id);

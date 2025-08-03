@@ -1,1 +1,36 @@
-<p>add-book-dialog works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="book-form">
+    <mat-form-field appearance="outline" class="book-form__field">
+        <mat-label>Название</mat-label>
+        <input matInput formControlName="name" />
+        @if (form.get('name')?.invalid) {
+            <mat-error>Обязательное поле</mat-error>
+        }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="book-form__field">
+        <mat-label>Автор</mat-label>
+        <input matInput formControlName="author" />
+        @if (form.get('author')?.invalid) {
+            <mat-error>Обязательное поле</mat-error>
+        }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="book-form__field">
+        <mat-label>Описание</mat-label>
+        <textarea matInput formControlName="description" rows="3"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="book-form__field">
+        <mat-label>Рейтинг (0–5)</mat-label>
+        <input type="number" matInput formControlName="rating" />
+        @if (form.get('rating')?.invalid) {
+            <mat-error>Введите значение от 0 до 5</mat-error>
+        }
+    </mat-form-field>
+
+    <div class="actions">
+        <button mat-flat-button color="primary" type="submit">
+            Сохранить
+        </button>
+    </div>
+</form>
