@@ -1,0 +1,37 @@
+@let book = $book();
+
+@if (book) {
+    <mat-card class="book-details">
+        <mat-card-header>
+            <div mat-card-avatar class="book-details__avatar">
+                <mat-icon>menu_book</mat-icon>
+            </div>
+            <mat-card-title class="book-details__title">{{ book.name }}</mat-card-title>
+            <mat-card-subtitle class="book-details__subtitle">{{ book.author }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <p class="book-details__description">{{ book.description }}</p>
+            <div class="book-details__meta">
+                <div>
+                    <mat-icon class="book-details__meta-icon">
+                        grade
+                    </mat-icon>
+                    {{ book.rating }} / 5
+                </div>
+            </div>
+        </mat-card-content>
+
+        <mat-card-actions class="book-details__actions">
+            <button mat-raised-button
+                    color="accent"
+                    routerLink="/"
+                    type="button"
+            >
+                Back to list
+            </button>
+        </mat-card-actions>
+    </mat-card>
+} @else {
+    <p class="book-details__empty">Nothing to display</p>
+}

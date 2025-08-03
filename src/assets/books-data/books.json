@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "name": "Clean Code",
+        "author": "Robert C. Martin",
+        "description": "Clean Code is a foundational book on software development that emphasizes writing code that is easy to read, maintain, and extend. The author provides best practices, code smells, and real-world examples. It highlights the importance of naming, functions, formatting, and error handling. The book is filled with practical advice and code comparisons. It's considered a must-read for developers at all levels.",
+        "rating": 5,
+        "year": 2008
+    },
+    {
+        "id": 2,
+        "name": "The Pragmatic Programmer",
+        "author": "Andrew Hunt, David Thomas",
+        "description": "This book is a collection of tips and philosophies to become a pragmatic developer. It teaches responsibility, communication, and flexibility in solving real-world problems. Topics include automation, testing, prototyping, and version control. It encourages continuous learning and critical thinking. The tone is conversational, filled with timeless advice and insights.",
+        "rating": 4,
+        "year": 1999
+    },
+    {
+        "id": 3,
+        "name": "You Don't Know JS Yet",
+        "author": "Kyle Simpson",
+        "description": "An in-depth and thought-provoking series that dives into the mechanics of JavaScript. It demystifies scopes, closures, async, and types in a clear and logical manner. The author explains the language’s quirks and patterns with precision. This book is ideal for those wanting to truly master JS internals. It's structured to challenge your assumptions and deepen your understanding.",
+        "rating": 5,
+        "year": 2020
+    },
+    {
+        "id": 4,
+        "name": "Design Patterns",
+        "author": "Erich Gamma et al.",
+        "description": "A timeless reference on object-oriented design and reusable software solutions. This book formalized the 'Gang of Four' patterns like Singleton, Observer, Factory, and more. It promotes flexibility, scalability, and maintainability through well-understood practices. Each pattern is explained with structure, motivation, and code samples. It's an essential resource for architects and experienced developers.",
+        "rating": 5,
+        "year": 1994
+    },
+    {
+        "id": 5,
+        "name": "Refactoring",
+        "author": "Martin Fowler",
+        "description": "Refactoring teaches how to improve the design of existing code without changing behavior. It focuses on incremental, safe, and test-driven improvements. The book includes detailed case studies and common transformation techniques. It empowers developers to clean up legacy code confidently. Fowler's approach promotes disciplined, evolutionary design.",
+        "rating": 4,
+        "year": 1999
+    },
+    {
+        "id": 6,
+        "name": "Eloquent JavaScript",
+        "author": "Marijn Haverbeke",
+        "description": "This modern introduction to JavaScript combines theory, practice, and interactivity. It covers language fundamentals, higher-order functions, and browser APIs. The book includes exercises and projects to reinforce concepts. Advanced topics like regular expressions and modules are explored. A great choice for both beginners and intermediate JS learners.",
+        "rating": 4,
+        "year": 2011
+    },
+    {
+        "id": 7,
+        "name": "The Clean Coder",
+        "author": "Robert C. Martin",
+        "description": "A companion to Clean Code, this book focuses on the professional behavior of developers. It covers work ethics, responsibility, time estimation, and communication. Uncle Bob provides insights from decades of industry experience. It teaches how to say no, when to push back, and how to write with integrity. Ideal for developers wanting to level up in professionalism.",
+        "rating": 4,
+        "year": 2011
+    },
+    {
+        "id": 8,
+        "name": "JavaScript: The Good Parts",
+        "author": "Douglas Crockford",
+        "description": "This slim but influential book filters out the messy parts of JavaScript. It focuses on elegant and powerful language features like functions, closures, and prototypal inheritance. Crockford explains how to write clearer, cleaner JavaScript. It’s concise, opinionated, and widely respected among JS developers. Great for those who want to master the language’s strengths.",
+        "rating": 3,
+        "year": 2008
+    },
+    {
+        "id": 9,
+        "name": "Domain-Driven Design",
+        "author": "Eric Evans",
+        "description": "This book provides strategic methods for modeling complex business domains. It introduces ubiquitous language, bounded contexts, and aggregate roots. Evans advocates close collaboration between domain experts and developers. The focus is on deeply understanding the business problem space. Perfect for architects and backend developers working on large systems.",
+        "rating": 5,
+        "year": 2003
+    },
+    {
+        "id": 10,
+        "name": "Working Effectively",
+        "author": "Michael Feathers",
+        "description": "Learn how to understand, test, and refactor legacy code without breaking it. Feathers gives you actionable techniques to improve bad code safely. Includes dependency breaking, test seam identification, and refactoring guides. A practical book for teams maintaining old but critical software. It helps you turn fear-driven changes into confident iterations.",
+        "rating": 4,
+        "year": 2004
+    },
+    {
+        "id": 11,
+        "name": "Don't Make Me Think",
+        "author": "Steve Krug",
+        "description": "A must-read for web designers and frontend developers focusing on usability. Krug’s approach is simple: if users have to think, they’ll leave. The book discusses layout, navigation, accessibility, and testing. Its tone is humorous and straightforward, backed by real user examples. It’s quick to read, but hard to forget once applied.",
+        "rating": 5,
+        "year": 2000
+    },
+    {
+        "id": 12,
+        "name": "Soft Skills",
+        "author": "John Sonmez",
+        "description": "Beyond coding, this book teaches career and personal development for developers. Covers communication, productivity, finance, fitness, and job search tips. It reads like a motivational guide tailored to tech professionals. The content is practical and mindset-focused, not technical. Good for engineers wanting a holistic career boost.",
+        "rating": 3,
+        "year": 2014
+    },
+    {
+        "id": 13,
+        "name": "The Phoenix Project",
+        "author": "Gene Kim, Kevin Behr, George Spafford",
+        "description": "A fictional story that teaches DevOps, IT operations, and business alignment. It follows a manager tasked with rescuing a failing IT project. Through storytelling, it introduces concepts like bottlenecks, flow, and continuous delivery. The book is engaging, educational, and widely recommended in IT circles. Perfect for developers, managers, and tech leads alike.",
+        "rating": 5,
+        "year": 2013
+    }
+]
