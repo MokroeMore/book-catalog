@@ -1,0 +1,29 @@
+@let book = $book();
+
+<mat-card class="book-card">
+    <mat-card-header class="book-card__header">
+        <div mat-card-avatar class="book-card__avatar">
+            <img
+                class="book-card__img"
+                src="/assets/images/pngs/cat-book.png"
+                alt="sad kitty"
+            >
+        </div>
+        <mat-card-title class="book-card__title ">{{ book?.name }}</mat-card-title>
+        <mat-card-subtitle class="book-card__subtitle">{{ book?.author }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="book-card__content">
+        <p class="book-card__description">{{ book?.description }}</p>
+    </mat-card-content>
+
+    <mat-card-actions class="book-card__actions">
+        <button mat-button
+                type="button"
+                color="primary"
+                [routerLink]="['/book', book?.id]"
+        >
+            More
+        </button>
+    </mat-card-actions>
+</mat-card>

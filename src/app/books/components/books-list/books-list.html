@@ -1,0 +1,17 @@
+@let books = $booksList();
+
+<div class="books-list__container">
+    @for (book of books; track book.id) {
+        <app-book-card [$book]="book" />
+    } @empty {
+        <div></div>
+        <div class="books-list__not-found">
+            <img
+                class="books-list__not-found-img"
+                src="/assets/images/pngs/sad-cat.png"
+                alt="sad kitty"
+
+            >
+        </div>
+    }
+</div>
